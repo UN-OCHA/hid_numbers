@@ -1,0 +1,4 @@
+app:
+  build: .
+  volumes:
+    - ./src:/srv/www
