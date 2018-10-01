@@ -86,7 +86,7 @@ $service = new Google_Service_Sheets($client);
 // Prints the names and majors of students in a sample spreadsheet:
 // https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
 $spreadsheetId = '1zS0hypMbIj8H2v61QCxcH6olY1ywk8uFVIl257B0N8w';
-$range = 'A1:F1';
+$range = 'A1:G1';
 $values = array(
   array(
     date('m/d/Y'),
@@ -95,6 +95,7 @@ $values = array(
     $numbers->numberGhosts,
     $numbers->numberAuth,
     $numbers->numberUsers,
+    $numbers->numberVerified
   )
 );
 $body = new Google_Service_Sheets_ValueRange(array(
